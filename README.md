@@ -4,7 +4,7 @@
 
 ## 🌐 Demo Preview
 
-[Live Preview (Paste in your hosting or local server)](#)
+[https://pulse-studio-template.netlify.app](#)
 
 ---
 
