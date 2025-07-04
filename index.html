@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="#" onclick="goHome()" style="text-decoration: none;">Pulse Studio</a></div>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <div class="close-btn" onclick="toggleMenu()">&times;</div>
+    <a href="#" onclick="goHome()">Home</a>
+    <a href="#" onclick="openSection('about')">About</a>
+    <a href="#" onclick="openSection('work')">Work</a>
+    <a href="#" onclick="openSection('contact')">Contact</a>
+  </div>
+
+  <div class="slideshow">
+    <div class="slide active" style="background-image: url('https://images.pexels.com/photos/4065877/pexels-photo-4065877.jpeg');">
+      <div class="overlay">
+        <h1>Bold. Creative. Digital.</h1>
+        <p>We turn your ideas into stunning digital experiences that make an impact.</p>
+        <button class="btn-glow" onclick="openSection('work')">View Our Work</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg');">
+      <div class="overlay">
+        <h1>Design That Connects</h1>
+        <p>We craft websites that move hearts and grow businesses.</p>
+        <button class="btn-glow" onclick="openSection('contact')">Start a Project</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://images.pexels.com/photos/4792733/pexels-photo-4792733.jpeg');">
+      <div class="overlay">
+        <h1>Next-Gen Web Experiences</h1>
+        <p>Speed, style, and substance — for modern brands.</p>
+        <button class="btn-glow" onclick="openSection('about')">Let’s Collaborate</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="section-wrapper" id="about">
+    <div class="section-content">
+      <h2>About Us</h2>
+      <p>We are a creative digital agency that blends design, development, and strategy to craft brands that resonate and websites that deliver. Let's create the future, together.</p>
+    </div>
+  </div> -->
+
+
+  <div id="about" class="about-section section-wrapper">
+    <div class="about-container">
+        <h2 class="section-title">About Pulse Studio</h2>
+        <p class="section-intro">We are not just a studio — we're a creative force turning ideas into stunning digital realities.</p>
+        
+        <div class="about-grid">
+        <div class="about-card">
+            <h3>🎯 Mission</h3>
+            <p>Deliver cutting-edge, visually engaging and technically sound digital experiences that make brands shine.</p>
+        </div>
+        <div class="about-card">
+            <h3>💡 Vision</h3>
+            <p>To be a creative hub where innovation meets design — elevating businesses globally through unique solutions.</p>
+        </div>
+        <div class="about-card">
+            <h3>🚀 What We Do</h3>
+            <ul>
+            <li>✨ Branding & Identity</li>
+            <li>📱 UI/UX Design</li>
+            <li>⚙️ Web & App Development</li>
+            <li>📊 Digital Strategy</li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="stats">
+        <div class="stat">
+            <h4>50+</h4>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+            <h4>25+</h4>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+            <h4>10</h4>
+            <p>Industries Served</p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="section-wrapper" id="work">
+    <div class="section-content">
+      <h2>Our Work</h2>
+      <p>From branding to development, our portfolio showcases innovative design and functional experiences that captivate audiences and drive success for modern businesses.</p>
+    </div>
+  </div> -->
+  <div class="section-wrapper" id="work">
+        <div class="work-container">
+            <h2 class="section-title">Our Work</h2>
+            <p class="section-intro">Check out some of our recent projects. Each piece showcases our commitment to quality, creativity, and results.</p>
+
+            <div class="portfolio-grid">
+            <div class="work-card">
+                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Project 1" />
+                <div class="work-overlay">
+                <h3>Brand Launch</h3>
+                <p>Logo & identity design for a fashion startup.</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Project 2" />
+                <div class="work-overlay">
+                <h3>Web Redesign</h3>
+                <p>Clean UX revamp for a SaaS product.</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Project 3" />
+                <div class="work-overlay">
+                <h3>Mobile App UI</h3>
+                <p>Sleek interface for a fintech platform.</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="https://images.pexels.com/photos/6476581/pexels-photo-6476581.jpeg" alt="Project 4" />
+                <div class="work-overlay">
+                <h3>E-Commerce Experience</h3>
+                <p>Full store build with custom animations.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="section-wrapper" id="contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <p>Have a project in mind? Let's talk.</p>
+      <form id="contactForm" onsubmit="return validateForm()" style="max-width: 600px; margin: 40px auto 0; text-align: left;">
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name"  minlength="2" style="width:100%;padding:12px;margin:10px 0;background:#1a1a1a;color:white;border:1px solid #333;border-radius:8px;" />
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email"  style="width:100%;padding:12px;margin:10px 0;background:#1a1a1a;color:white;border:1px solid #333;border-radius:8px;" />
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="5"  minlength="10" style="width:100%;padding:12px;margin:10px 0;background:#1a1a1a;color:white;border:1px solid #333;border-radius:8px;"></textarea>
+
+        <button class="btn-glow" type="submit" style="width:100%;margin-top:10px;">Send Message</button>
+      </form>
+      <p style="margin-top: 20px;">Or email us directly: <strong>mostafahanawork@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Pulse Studio Template — Designed with ♥ by Mostafa Hana.
+  </footer>
+  <script src="main.js" defer></script>
+</body>
+</html>
